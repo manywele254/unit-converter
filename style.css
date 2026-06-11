@@ -1,0 +1,129 @@
+:root {
+  --main-bg-color: #1c1c1c;
+  --main-color: #6943ff;
+  --black-color: #353535;
+  --title-color: #5a537b;
+  --dark-version-bg: #1f2937;
+  --light-version-bg: #f4f4f4;
+  --dark-card-bg: #273549;
+  --light-card-bg: #fff;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  font-family: "Inter", sans-serif;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  gap: 50px;
+}
+
+.light-container,
+.dark-container {
+  width: 550px;
+  height: 729px;
+}
+
+.light-container {
+  background-color: var(--light-version-bg);
+}
+
+.dark-container {
+  background-color: var(--dark-version-bg);
+}
+
+.main-con {
+  width: 100%;
+  height: 285px;
+  background-color: var(--main-color);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.main-con h1 {
+  font-size: 28px;
+  font-weight: 800;
+}
+.main-con input {
+  background-color: var(--main-color);
+  width: 117px;
+  height: 83px;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 58px;
+  padding: 20px;
+  font-weight: 900;
+  color: white;
+}
+
+.main-con button {
+  width: 117px;
+  height: 42px;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.d-cards,
+.l-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.card {
+  width: 500px;
+  height: 109px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+.l-cards .card {
+  background-color: white;
+}
+.card h3 {
+  color: var(--title-color);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.d-cards .card {
+  color: white;
+}
+
+.d-cards .card {
+  background-color: var(--dark-card-bg);
+}
